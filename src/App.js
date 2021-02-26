@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import HelloWorld from "./components/HelloWorld";
+import Sum from "./components/Sum";
+import Random from "./components/Random";
+import Big from "./components/Big";
+import List from "./components/List";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HelloWorld />
+      
+      <Sum a={5} b={7} /> 
+      <Random min={5} max={10} /> 
+      <Big a={5} b={4} /> 
+      <List items={['Apple', 'Kiwi']} />
     </div>
   );
 }
